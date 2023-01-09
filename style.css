@@ -1,0 +1,87 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.913);
+    
+}
+
+button {
+    background: inherit;
+	color: inherit;
+	border: none;
+    font: inherit;
+    
+}
+
+.calc {
+    margin: 50px auto;
+    width: 350px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 15% 20% 20% 20% 20%;
+    text-align: center;
+    
+}
+
+.operators {
+    background-color:rgb(189, 211, 227) ;
+    border-right: 3px solid rgb(155, 163, 167);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+#divide{
+    border-right: none;
+}
+
+.numbers{
+    background-color:rgb(235, 214, 201) ;
+    border-top: 3px solid rgb(155, 163, 167);
+    border-right: 3px solid rgb(155, 163, 167);
+    align-self: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+#zero {
+    border-bottom-left-radius: 10px;
+}
+
+
+
+.result {
+    grid-area: 1/1/2/5;
+    text-align: right;
+    padding: 1rem;
+    color: white;
+    background-color: rgb(73, 79, 83);
+    align-self: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#equal {
+    grid-area: 3/4/7/4;
+    background-color: rgb(255, 117, 130);
+    border-top: 3px solid rgb(155, 163, 167);
+    border-bottom-right-radius: 10px;
+    padding-top: 100px;
+    
+}
+.operators:hover{
+    background-color: royalblue;
+}
+.numbers:hover {
+    background-color: coral;
+}
+#equal:hover{
+    background-color: crimson;
+}
